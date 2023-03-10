@@ -1,0 +1,2 @@
+# ignore all node modules, dependencies
+node_modules
