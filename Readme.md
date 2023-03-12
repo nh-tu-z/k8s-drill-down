@@ -10,4 +10,5 @@ Reference: [link](https://www.digitalocean.com/community/tech-talks/how-to-deplo
 3. Run PowerShell and run a test command such as `kubectl get pods` 
 
 TODO - write deployment, service
+
 TODO - include some kubectl to monitor the app
