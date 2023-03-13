@@ -13,7 +13,7 @@ Reference: [link](https://www.digitalocean.com/community/tech-talks/how-to-deplo
 
 3. Run some samples `kubectl` command to check whether it works
 
-### Run k8s in local env
+### Run k8s in local env using Docker (test not successfully)
 
 1. Install Docker desktop (Windows)
 2. Enable `Kubernetes` in Settings of Docker desktop
