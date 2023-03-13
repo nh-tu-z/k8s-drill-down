@@ -35,9 +35,11 @@ Reference: [link](https://www.digitalocean.com/community/tech-talks/how-to-deplo
     kubectl delete namespaces tuhngo-namespace
     ```
 
+### TODO - Nodes
+
 ### Some command to investigate the deployment file
 
-1. Check the result after apply the `.yaml` file
+1. Check the result after apply the `.yaml` file (this result might be used to input of investigation)
     ```shell
     # Get deployments
     kubectl get deployments
@@ -60,3 +62,4 @@ TODO - include some kubectl to monitor the app
 ### References
 
 1. K8s Cheat sheet - [link](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+2. Exit code in Container & K8s - [link](https://komodor.com/learn/exit-codes-in-containers-and-kubernetes-the-complete-guide/)
