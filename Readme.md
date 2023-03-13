@@ -23,10 +23,8 @@ Reference: [link](https://www.digitalocean.com/community/tech-talks/how-to-deplo
     kubectl get pods
 
     # Metadata details of pod
-    # First list pods
-    kubectl get pods
-    # Get metadata based on pod name
-    kubectl describe pods <pod-name>
+    kubectl get pods # First list pods
+    kubectl describe pods <pod-name> # Get metadata based on pod name
     ```
 
 TODO - write deployment, service
