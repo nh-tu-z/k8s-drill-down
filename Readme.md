@@ -30,3 +30,7 @@ Reference: [link](https://www.digitalocean.com/community/tech-talks/how-to-deplo
 TODO - write deployment, service
 
 TODO - include some kubectl to monitor the app
+
+### References
+
+1. K8s Cheat sheet - [link](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
