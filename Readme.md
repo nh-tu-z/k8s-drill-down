@@ -9,6 +9,32 @@ Reference: [link](https://www.digitalocean.com/community/tech-talks/how-to-deplo
 2. Enable `Kubernetes` in Settings of Docker desktop
 3. Run PowerShell and run a test command such as `kubectl get pods` 
 
+### Namespace
+
+1. There are 4 default namespaces: `default`, `kube-node-lease`, `kube-public` and `kube-system`
+
+2. View available namespaces
+    ```shell
+    kubectl get namespace
+    ```
+    or 
+    ```shell
+    kubectl get namespaces --show-labels
+    ```
+
+3. Create a namespace
+    ```shell
+    kubectl create -f ./k8s/np/proj-np.yaml
+    ```
+
+4. Delete a namespace
+    ```shell
+    kubectl delete namespaces <insert-some-namespace-name>
+
+    # Example
+    kubectl delete namespaces tuhngo-namespace
+    ```
+
 ### Some command to investigate the deployment file
 
 1. Check the result after apply the `.yaml` file
