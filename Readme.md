@@ -2,6 +2,16 @@
 
 Reference: [link](https://www.digitalocean.com/community/tech-talks/how-to-deploy-a-resilient-node-js-application-on-kubernetes-from-scratch)
 
+### Install K8s in local machine
+
+1. We must have a hypervisor have been installed in the local machine as a pre-ccondition to run `Minikube` which is based to run `kubectl`. Hypervisor should be the `Hyper-V` or `VirtualBox`. `Hyper-V` is the best choice for Windows. And `VirtualBox` is great if you need something call **cross-platform**. At the time, I write this article, I am using Win 10 so I choose `Hyper-V`. Reference link [here](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
+
+2. Install `Minikube` and start it follow this [link](https://minikube.sigs.k8s.io/docs/drivers/hyperv/). Run PowerShell as administrator and run the command:
+    ```shell
+    minikube start --driver=hyperv 
+    ```
+
+3. Run some samples `kubectl` command to check whether it works
 
 ### Run k8s in local env
 
@@ -35,7 +45,7 @@ Reference: [link](https://www.digitalocean.com/community/tech-talks/how-to-deplo
     kubectl delete namespaces tuhngo-namespace
     ```
 
-### TODO - Nodes
+### Nodes
 
 ### Some command to investigate the deployment file
 
@@ -63,3 +73,4 @@ TODO - include some kubectl to monitor the app
 
 1. K8s Cheat sheet - [link](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 2. Exit code in Container & K8s - [link](https://komodor.com/learn/exit-codes-in-containers-and-kubernetes-the-complete-guide/)
+3. Config various `minikube` drivers - [link](https://minikube.sigs.k8s.io/docs/drivers/)
